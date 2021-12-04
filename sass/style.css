@@ -1,0 +1,1053 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+  font-family: 'Oswald', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #000;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #f00;
+}
+
+body {
+  background: #000;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.fa-times {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.heading {
+  position: relative;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heading::before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: .1rem;
+  width: 100%;
+  background: #aaa;
+  z-index: -1;
+}
+
+.heading span {
+  background: #000;
+  padding: .5rem 1.5rem;
+  color: #f00;
+  font-size: 2.5rem;
+  border: 0.1rem solid #aaa;
+  border-radius: .3rem;
+}
+
+header.head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0%;
+  padding: 1.5rem 7%;
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1000;
+}
+
+header.head a.logo {
+  font-size: 2.5rem;
+  color: #fff;
+  letter-spacing: .1rem;
+}
+
+header.head a.logo span {
+  color: #f00;
+}
+
+header.head .navbar a {
+  padding: .5rem 1.3rem;
+  color: #fff;
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+}
+
+header.head .navbar a:hover {
+  background: #f00;
+  color: #fff;
+}
+
+header.head .items {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 1.8rem;
+}
+
+header.head .items a.menu-bar {
+  display: none;
+}
+
+header.head .items a.menu-bar i {
+  font-size: 2rem;
+  color: #fff;
+}
+
+header.head .items a.menu-bar i:hover {
+  color: #f00;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+header.head .items a.login i {
+  font-size: 2rem;
+  color: #fff;
+}
+
+header.head .items a.login i:hover {
+  color: #f00;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+div.home .home-container .home-wrapper .home-slider .home-text {
+  position: absolute;
+  top: 35%;
+  width: 30%;
+  left: 10%;
+  z-index: 10000;
+}
+
+div.home .home-container .home-wrapper .home-slider .home-text span {
+  color: #f00;
+  font-size: 2rem;
+  letter-spacing: .05rem;
+}
+
+div.home .home-container .home-wrapper .home-slider .home-text h3 {
+  font-size: 4rem;
+  color: #fff;
+  margin: 1rem 0;
+  font-weight: 300;
+}
+
+div.home .home-container .home-wrapper .home-slider .home-text .btn {
+  color: #fff;
+  padding: 1rem 2.8rem;
+  cursor: pointer;
+  padding-right: 3rem;
+  background: linear-gradient(130deg, #f00 93%, transparent 90%);
+  margin: .5rem 0;
+}
+
+div.home .home-container .home-wrapper .home-slider .home-text .btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+div.home .home-container .home-wrapper .home-slider .home-image {
+  position: relative;
+}
+
+div.home .home-container .home-wrapper .home-slider .home-image img {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 0;
+  background: #aaa;
+}
+
+section.about .about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 5rem;
+  margin-top: 5rem;
+}
+
+section.about .about-container .about-image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 42rem;
+          flex: 1 1 42rem;
+  position: relative;
+}
+
+section.about .about-container .about-image::before, section.about .about-container .about-image::after {
+  position: absolute;
+  content: '';
+  height: 15rem;
+  width: 15rem;
+  background: #f00;
+  z-index: -1;
+}
+
+section.about .about-container .about-image::before {
+  top: -1.3rem;
+  left: -1.3rem;
+}
+
+section.about .about-container .about-image::after {
+  bottom: -1.3rem;
+  right: -1.3rem;
+}
+
+section.about .about-container .about-image img {
+  width: 100%;
+}
+
+section.about .about-container .about-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 42rem;
+          flex: 1 1 42rem;
+}
+
+section.about .about-container .about-text h4 {
+  font-size: 1.8rem;
+  color: #f00;
+  letter-spacing: .1rem;
+}
+
+section.about .about-container .about-text h2 {
+  font-size: 4rem;
+  color: #fff;
+  font-weight: 300;
+  width: 59%;
+}
+
+section.about .about-container .about-text p {
+  font-size: 1.4rem;
+  line-height: 2.3;
+  color: #aaa;
+  margin: 1rem 0;
+}
+
+section.about .about-container .about-text .top,
+section.about .about-container .about-text .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+section.about .about-container .about-text .top .flex,
+section.about .about-container .about-text .bottom .flex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.3rem;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+section.about .about-container .about-text .top .flex i,
+section.about .about-container .about-text .bottom .flex i {
+  color: #f00;
+  font-size: 1.5rem;
+}
+
+section.about .about-container .about-text .top p,
+section.about .about-container .about-text .bottom p {
+  font-size: 1.3rem;
+  color: #aaa;
+  line-height: 2.3;
+}
+
+section.about .about-container .about-text .bottom {
+  margin: .5rem 0;
+}
+
+section.about .about-container .about-text .btn {
+  color: #fff;
+  padding: 1rem 2.8rem;
+  cursor: pointer;
+  padding-right: 3rem;
+  background: linear-gradient(130deg, #f00 93%, transparent 90%);
+  font-size: 1.7rem;
+  width: 11rem;
+  padding: .5rem 2rem;
+  margin: 1rem 0;
+}
+
+section.about .about-container .about-text .btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+section.features .feature-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 0;
+  margin-top: 4rem;
+}
+
+section.features .feature-container .feature:hover img.main {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+section.features .feature-container .feature .feature-image {
+  overflow: hidden;
+}
+
+section.features .feature-container .feature .feature-image img.main {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.features .feature-container .feature .content {
+  background: #111;
+  height: 46vh;
+  padding: 1rem;
+}
+
+section.features .feature-container .feature .content img.sub {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  width: 28%;
+  display: block;
+  margin: auto;
+  padding: .5rem;
+}
+
+section.features .feature-container .feature .content h3 {
+  margin: 1rem 0;
+  text-align: center;
+  font-size: 2rem;
+  color: #f00;
+  letter-spacing: .1rem;
+  font-weight: 300;
+}
+
+section.features .feature-container .feature .content p {
+  line-height: 1.6;
+  font-size: 1.3rem;
+  color: #aaa;
+  text-align: center;
+  letter-spacing: .1rem;
+  margin: 1rem 0;
+}
+
+section.features .feature-container .feature .content .btn {
+  color: #fff;
+  padding: 1rem 2.8rem;
+  cursor: pointer;
+  padding-right: 3rem;
+  background: linear-gradient(130deg, #f00 93%, transparent 90%);
+  display: block;
+  margin: auto;
+  padding: .8rem 1.5rem;
+}
+
+section.features .feature-container .feature .content .btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+section.pricing .pricing-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+section.pricing .pricing-container .pricing-intro span {
+  letter-spacing: .05rem;
+  color: #f00;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+section.pricing .pricing-container .pricing-intro h2 {
+  font-size: 4rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+section.pricing .pricing-container .pricing-intro p {
+  font-size: 1.3rem;
+  line-height: 2;
+  letter-spacing: .05rem;
+  color: #aaa;
+  margin: 1rem 0;
+}
+
+section.pricing .pricing-container .pricing-intro .special {
+  color: #aaa;
+  margin: 1.5rem 0;
+  font-size: 1.5rem;
+  letter-spacing: .05rem;
+}
+
+section.pricing .pricing-container .pricing-intro .special i {
+  color: #f00;
+  margin-right: .5rem;
+}
+
+section.pricing .pricing-container .pricing-intro button.btn {
+  color: #fff;
+  padding: 1rem 2.8rem;
+  cursor: pointer;
+  padding-right: 3rem;
+  background: linear-gradient(130deg, #f00 93%, transparent 90%);
+  letter-spacing: .05rem;
+}
+
+section.pricing .pricing-container .pricing-intro button.btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+section.pricing .pricing-container .pricing-card {
+  text-align: center;
+  padding: 4rem;
+}
+
+section.pricing .pricing-container .pricing-card h3 {
+  font-size: 4rem;
+  color: #fff;
+  margin: 1rem 0;
+  font-weight: 300;
+}
+
+section.pricing .pricing-container .pricing-card h2 {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+section.pricing .pricing-container .pricing-card h2 span {
+  color: #f00;
+  font-size: 3.5rem;
+  font-weight: 200;
+}
+
+section.pricing .pricing-container .pricing-card .flex {
+  color: #aaa;
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+section.pricing .pricing-container .pricing-card .flex i {
+  color: #f00;
+  margin-right: .8rem;
+}
+
+section.pricing .pricing-container .pricing-card button.btn {
+  color: #fff;
+  padding: 1rem 2.8rem;
+  cursor: pointer;
+  padding-right: 3rem;
+  background: linear-gradient(130deg, #f00 93%, transparent 90%);
+  padding: .5rem 2rem;
+}
+
+section.pricing .pricing-container .pricing-card button.btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+section.pricing .pricing-container .unique {
+  background: linear-gradient(130deg, #111 93%, transparent 90%);
+}
+
+section.trainer .trainers-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+section.trainer .trainers-container .trainer-card {
+  position: relative;
+  overflow: hidden;
+}
+
+section.trainer .trainers-container .trainer-card:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+section.trainer .trainers-container .trainer-card:hover .tr-cont {
+  bottom: 0;
+}
+
+section.trainer .trainers-container .trainer-card .tr-img {
+  overflow: hidden;
+}
+
+section.trainer .trainers-container .trainer-card .tr-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.trainer .trainers-container .trainer-card .tr-cont {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -5.4rem;
+  background: #111;
+  padding: 1rem;
+}
+
+section.trainer .trainers-container .trainer-card .tr-cont span {
+  color: #f00;
+  font-size: 1.4rem;
+  letter-spacing: .05rem;
+  font-weight: 700;
+}
+
+section.trainer .trainers-container .trainer-card .tr-cont h2 {
+  color: #fff;
+  font-size: 1.8rem;
+  letter-spacing: .05rem;
+}
+
+section.trainer .trainers-container .trainer-card .tr-cont .spans {
+  border-top: 0.1rem solid #aaa;
+  width: 87%;
+  margin-top: 1rem;
+}
+
+section.trainer .trainers-container .trainer-card .tr-cont .spans i {
+  padding: 1rem .5rem;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+section.trainer .trainers-container .trainer-card .tr-cont .spans i:nth-child(1) {
+  padding-left: 0;
+}
+
+section.trainer .trainers-container .trainer-card .tr-cont .spans i:hover {
+  color: #f00;
+}
+
+div.subscribe {
+  background: url(../images/banner-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 60vh;
+  position: relative;
+}
+
+div.subscribe .sub-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+div.subscribe .sub-content span {
+  color: #f00;
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: .05rem;
+}
+
+div.subscribe .sub-content h1 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 4rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+div.subscribe .sub-content p {
+  color: #aaa;
+  letter-spacing: .08rem;
+  width: 75%;
+  text-align: center;
+  line-height: 2;
+  font-size: 1.3rem;
+  margin: 1.5rem auto;
+}
+
+div.subscribe .sub-content button.btn {
+  color: #fff;
+  padding: 1rem 2.8rem;
+  cursor: pointer;
+  padding-right: 3rem;
+  background: linear-gradient(130deg, #f00 93%, transparent 90%);
+  display: block;
+  margin: auto;
+}
+
+div.subscribe .sub-content button.btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+section.testimonial .testimonial-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+section.testimonial .testimonial-container .testimonial-card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30rem;
+          flex: 1 1 30rem;
+  color: #fff;
+}
+
+section.testimonial .testimonial-container .testimonial-card span {
+  font-size: 1.5rem;
+  letter-spacing: .08rem;
+  color: #f00;
+}
+
+section.testimonial .testimonial-container .testimonial-card h2 {
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+section.testimonial .testimonial-container .testimonial-card p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  letter-spacing: .05rem;
+  color: #aaa;
+  margin: 1rem 0;
+}
+
+section.testimonial .testimonial-container .testimonial-card .btn {
+  color: #fff;
+  padding: 1rem 2.8rem;
+  cursor: pointer;
+  padding-right: 3rem;
+  background: linear-gradient(130deg, #f00 93%, transparent 90%);
+}
+
+section.testimonial .testimonial-container .testimonial-card .btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+section.testimonial .testimonial-container .review-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 42rem;
+          flex: 1 1 42rem;
+}
+
+section.testimonial .testimonial-container .review-container .review {
+  width: 56%;
+  padding: 1.2rem;
+  background: linear-gradient(130deg, #111 93%, transparent 90%);
+}
+
+section.testimonial .testimonial-container .review-container .review p {
+  color: #aaa;
+  font-size: 1.3rem;
+  line-height: 1.8;
+}
+
+section.testimonial .testimonial-container .review-container .review .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: .5rem;
+}
+
+section.testimonial .testimonial-container .review-container .review .flex .left {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+section.testimonial .testimonial-container .review-container .review .flex .left h4 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: .08rem;
+  color: #fff;
+}
+
+section.testimonial .testimonial-container .review-container .review .flex .left span {
+  display: block;
+  color: #f00;
+  font-size: 1.2rem;
+  letter-spacing: .05rem;
+}
+
+section.testimonial .testimonial-container .review-container .review .flex i {
+  font-size: 4rem;
+  color: #f00;
+}
+
+section.testimonial .testimonial-container .review-container .review .flex img {
+  width: 22%;
+  border-radius: 50%;
+}
+
+section.blog .blogs-container .blog-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1rem;
+}
+
+section.blog .blogs-container .blog-wrapper .blog:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+section.blog .blogs-container .blog-wrapper .blog .blog-img {
+  overflow: hidden;
+}
+
+section.blog .blogs-container .blog-wrapper .blog .blog-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.blog .blogs-container .blog-wrapper .blog .blog-cont {
+  color: #fff;
+  background: #111;
+  padding: 1.5rem;
+}
+
+section.blog .blogs-container .blog-wrapper .blog .blog-cont h4 {
+  color: #f00;
+  font-size: 1.3rem;
+  letter-spacing: .05rem;
+}
+
+section.blog .blogs-container .blog-wrapper .blog .blog-cont h4 span {
+  color: #fff;
+  padding: 0 .5rem;
+}
+
+section.blog .blogs-container .blog-wrapper .blog .blog-cont h2 {
+  color: #fff;
+  font-weight: 500;
+  margin: 1rem 0;
+  font-size: 1.6rem;
+}
+
+section.blog .blogs-container .blog-wrapper .blog .blog-cont p {
+  letter-spacing: .05rem;
+  color: #aaa;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+section.blog .blogs-container .blog-wrapper .blog .blog-cont .btn {
+  color: #fff;
+  padding: 1rem 2.8rem;
+  cursor: pointer;
+  padding-right: 3rem;
+  background: linear-gradient(130deg, #f00 93%, transparent 90%);
+  margin: 1rem auto;
+  padding: 1rem 1.8rem;
+}
+
+section.blog .blogs-container .blog-wrapper .blog .blog-cont .btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+section.footer .footer-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1rem;
+}
+
+section.footer .footer-container .foot1 h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin: 1rem 0;
+}
+
+section.footer .footer-container .foot1 a {
+  display: block;
+  font-size: 1.5rem;
+  color: #aaa;
+  margin: 1.5rem 0;
+  letter-spacing: .05rem;
+}
+
+section.footer .footer-container .foot1 a:hover {
+  color: #f00;
+}
+
+section.footer .footer-container .foot2 h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin: 1rem 0;
+}
+
+section.footer .footer-container .foot2 h4 {
+  color: #aaa;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 1.5rem 0;
+  letter-spacing: .08rem;
+}
+
+section.footer .footer-container .foot2 h4 span {
+  color: #f00;
+}
+
+section.footer .footer-container .foot3 h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin: 1rem 0;
+}
+
+section.footer .footer-container .foot3 a {
+  color: #aaa;
+  font-size: 1.8rem;
+  display: block;
+  margin: 1rem 0;
+  text-transform: lowercase;
+}
+
+section.footer .footer-container .foot3 a i {
+  color: #f00;
+  margin-right: .5rem;
+}
+
+section.footer .footer-container .foot3 .icons {
+  margin-top: 3rem;
+}
+
+section.footer .footer-container .foot3 .icons span {
+  padding: 1.5rem 1.5rem;
+  border-radius: 50%;
+  background: #111;
+  margin: 0 .3rem;
+}
+
+section.footer .footer-container .foot3 .icons span:hover {
+  background: #fff;
+  cursor: pointer;
+}
+
+section.footer .footer-container .foot3 .icons span:hover i {
+  color: #f00;
+}
+
+section.footer .footer-container .foot3 .icons span i {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+section.footer .footer-container .foot4 {
+  margin-top: 2rem;
+}
+
+section.footer .footer-container .foot4 h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin: 1rem 0;
+}
+
+section.footer .footer-container .foot4 span {
+  color: #aaa;
+  font-size: 1.4rem;
+}
+
+section.footer .footer-container .foot4 input {
+  background: #111;
+  padding: 1rem;
+  color: #fff;
+  margin: 1rem 0;
+  display: block;
+}
+
+section.footer .footer-container .foot4 .btn {
+  color: #fff;
+  padding: 1rem 2.8rem;
+  cursor: pointer;
+  padding-right: 3rem;
+  background: linear-gradient(130deg, #f00 93%, transparent 90%);
+  width: 42%;
+  font-size: 1.5rem;
+  padding-right: 2.8rem;
+}
+
+section.footer .footer-container .foot4 .btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+section.footer .credit {
+  text-align: center;
+  font-size: 3rem;
+  color: #fff;
+  margin: 1.5rem 0;
+}
+
+section.footer .credit span {
+  color: #f00;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  section {
+    padding: 2rem;
+  }
+  header {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header.head .items a.menu-bar {
+    display: block;
+  }
+  header.head .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #000;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  header.head .navbar a {
+    display: block;
+    margin: 1rem .5rem;
+    border: 0.2rem solid #111;
+    background: #111;
+    border-radius: .4rem;
+    border-left-color: #f00;
+    padding: .5rem;
+  }
+}
+
+header.head .navbar.active {
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  div.home .home-container .home-wrapper .home-slider .home-text span {
+    font-size: 1.5rem;
+  }
+  div.home .home-container .home-wrapper .home-slider .home-text h3 {
+    width: 227%;
+    font-size: 3rem;
+  }
+  div.home .home-container .home-wrapper .home-slider .home-text .btn {
+    font-size: 1.5rem;
+    padding: 1.2rem 1.2rem;
+  }
+  div.home .home-container .home-wrapper .home-slider .home-image img {
+    background-position: right;
+    background-size: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  section.about .about-container .about-text h2 {
+    width: 90%;
+  }
+  div.subscribe .sub-content span {
+    font-size: 1.8rem;
+  }
+  div.subscribe .sub-content h1 {
+    font-size: 2rem;
+  }
+  div.subscribe .sub-content p {
+    width: 103%;
+  }
+  section.footer .credit {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
